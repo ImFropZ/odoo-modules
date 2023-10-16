@@ -1,0 +1,14 @@
+.container-youtube-videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: auto 0;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 2rem;
+}

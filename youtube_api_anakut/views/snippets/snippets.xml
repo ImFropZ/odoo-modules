@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="youtube_api_anakut" name="Youtube API Snippets" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_effect']//t[@t-snippet][last()]" position="after">
+      <t t-snippet="youtube_api_anakut.dynamic_youtube_videos_anakut"/>
+    </xpath>
+  </template>
+</odoo>

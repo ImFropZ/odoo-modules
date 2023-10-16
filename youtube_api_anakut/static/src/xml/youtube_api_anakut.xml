@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template xml:space="preserve">
+  <t t-name="youtube_api_anakut.YoutubeIframes">
+    <t t-foreach="videos" t-as="video">
+    <iframe width="560" height="315" t-attf-src="https://www.youtube.com/embed/#{video.id.videoId}?si=ERPtw4NbHRnkh1WS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+    </t>
+  </t>
+</template>
+

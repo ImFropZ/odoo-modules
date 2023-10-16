@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <template id="dynamic_youtube_videos_anakut" name="Dynamic Youtube Videos">
+      <section id="dynamic_snippet_youtube_videos">
+        <div class="container-youtube-videos">Snippet for Youtube Videos</div>
+        <div class="button-container">
+          <button class="youtube_load_more_btn btn btn-primary">Load more</button>
+          <a href="#" class="btn btn-primary subscribe_btn" target="_blank">Subscribe</a>
+        </div>
+      </section>
+    </template>
+
+    <template id="dynamic_youtube_videos_anakut_options" inherit_id="website.snippet_options"
+      name="Dynamic Youtube Videos Options">
+      <xpath expr="." position="inside">
+        <div data-js="" data-selector="#dynamic_snippet_youtube_videos" data-no-preview="true">
+          <we-input string="Channel ID" class="o_we_large"
+            data-name="dynamic_snippet_youtube_videos_channel_id"
+            data-attribute-name="channel_id"
+            data-no-preview="true"
+            data-select-data-attribute=""
+            placeholder="Channel ID"
+            title="Enter your channel ID"
+          />
+          <we-input string="Youtube Channel Link" class="o_we_large"
+            data-name="dynamic_snippet_youtube_videos_youtube_channel_link"
+            data-attribute-name="youtube_channel_link"
+            data-no-preview="true"
+            data-select-data-attribute=""
+            placeholder="Youtube Channel Link"
+            title="Enter your Youtube Channel Link"
+          />
+        </div>
+      </xpath>
+    </template>
+
+    <record id="youtube_api_anakut.s_youtube_videos_000_js" model="ir.asset">
+      <field name="name">Anakut Dynamic Youtube Videos 000 JS</field>
+      <field name="bundle">web.assets_frontend</field>
+      <field name="path">youtube_api_anakut/static/src/snippets/s_youtube_videos/000.js</field>
+    </record>
+
+    <record id="youtube_api_anakut.s_youtube_videos_000_scss" model="ir.asset">
+      <field name="name">Anakut Dynamic Youtube Videos 000 SCSS</field>
+      <field name="bundle">web.assets_frontend</field>
+      <field name="path">youtube_api_anakut/static/src/snippets/s_youtube_videos/000.scss</field>
+    </record>
+  </data>
+</odoo>
