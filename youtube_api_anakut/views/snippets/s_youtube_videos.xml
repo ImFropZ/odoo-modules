@@ -31,6 +31,15 @@
             placeholder="Youtube Channel Link"
             title="Enter your Youtube Channel Link"
           />
+          <we-input string="Number of videos" class="o_we_large"
+            data-name="dynamic_snippet_youtube_videos_number_of_videos"
+            data-attribute-name="number_of_videos"
+            data-no-preview="true"
+            data-select-data-attribute=""
+            type="number"
+            placeholder="eg. 10"
+            title="Enter your the number of videos"
+          />
         </div>
       </xpath>
     </template>
